@@ -182,6 +182,14 @@
     </footer>
 
     <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileMenu) {
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 button.classList.toggle('active');
